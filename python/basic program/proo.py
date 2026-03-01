@@ -1,0 +1,11 @@
+#write a python program to find distance between two points.
+print("enter x1")
+x1=float(input())
+print("enter y1")
+y1=float(input())
+print("enter x2")
+x2=float(input())
+print("enter y2")
+y2=float(input())
+d=((x2-x1)**2+(y2-y1)**2)**0.5
+print("distance=",d)
