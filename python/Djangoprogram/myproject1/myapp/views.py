@@ -1,0 +1,25 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+
+def home(request):
+	return render(request, 'index.html')
+
+def about(request):
+	return render(request,'about.html')
+
+
+def home1(request):
+	return HttpResponse("Hello world") 
+
+
+def about1(requset):
+	return HttpResponse("About Page")
+
+def contact(request):
+	return HttpResponse("Contact Page")
+
+def services(request):
+	return HttpResponse("Our Services")
+
+def welcome(request,name):
+	return HttpResponse(f"welcome {name}!")
